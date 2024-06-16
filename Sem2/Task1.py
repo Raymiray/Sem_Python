@@ -7,10 +7,10 @@
 
 n = int(input("Enter a number: "))
 res = 1
-i = 1
+# i = 1
 
-while i <= n:
-    res *= i
-    i += 1
+while n >= 1:
+    res *= n
+    n -= 1
     
 print(res)

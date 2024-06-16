@@ -23,4 +23,17 @@ while a > num3:
 print(count)
     
 
+# Второе решение
+last = 0
+cur = 1
+counter = 2
+
+while a > cur:
+    last, cur = cur, last + cur
+    counter +=1
+
+if a < cur:
+    counter = -1
+
+print(counter)
 
