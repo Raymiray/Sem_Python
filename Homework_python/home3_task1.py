@@ -8,3 +8,19 @@ for i in range(len(list_1)):
     if list_1[i] == k:
         count += 1
 print(count)
+
+
+# Второй способ
+from array import array
+
+n = int(input('Введите количество чисел: '))
+if n <= 0:
+    print('Число не положительное')
+    exit()
+data = array('i')
+for i in range(n):
+    data.append(int(input('Введите число № {}: '.format(i + 1))))
+x = int(input('Введите число для поиска: '))
+
+count = data.count(x)
+print(count)
